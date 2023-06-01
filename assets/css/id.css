@@ -1,0 +1,306 @@
+/* announcement-bar */
+#announcement-bar-change-colour{
+  --color-announcement-bar:#deefff;
+  --color-announcement-bar-text:#142c73;
+  --color-accent:#142c73;
+}
+#announcement-bar-change-colour-2{
+  --color-announcement-bar:#fff7cc;
+  --color-announcement-bar-text:#142c73;
+  --color-accent:#142c73;
+}
+
+/* left-nav */
+#aspect-ratio-1{
+  --aspect-ratio: 1.3;
+}
+#sale{
+  --color-badge-1:#d20404;
+  --color-badge-1-text: #ffffff;
+}
+
+/* contact-us */
+#contact-us-hero {
+    --color-section-background: #ffd701;
+  }
+
+  @media (max-width: 576px) {
+    .contact-form__field {
+      margin-top: var(--padding2);
+    }
+  }  
+
+  /* pet hotel */
+  @media (min-width: 993px) {
+    #slideshow-pet-hotel #block-pet-hotel .btn:not(.btn--secondary) {
+      --background: #142c73;
+      --color: var(--auto-text-color-button-light);
+    }
+  }
+
+  /* single product */
+  #image-with-text-single-product {
+    color: #ffd701;
+  }
+/* single product / clinic */
+  #image-with-text2-single-product-clinic .subheading {
+    color: #142c73;
+  }
+
+  #image-with-text2-single-product-clinic .heading {
+    --color-base: #142c73;
+  }
+
+  #image-with-text2-single-product-clinic .image-with-text2__texts {
+    color: #142c73;
+  }
+
+  #image-with-text2-single-product-clinic .image-with-text2 {
+    --color-background: #ffd701;
+  }
+
+  /* help */
+  #text-help {
+    --color-section-background: #ffd701;
+  }
+
+  /* blog */
+  @media (min-width: 993px) {
+    #newsletter-blog .section-background {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#newsletter-blog {
+    --color-section-background: #ffd701;
+}
+
+/* blog post news */
+.article-container {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  /* food */
+  @media (min-width: 993px) {
+    #image-food .image-banner__heading {
+      --color-base: #ffffff;
+    }
+
+    #image-food .image-banner__description {
+      color: #ffffff;
+    }
+
+    #image-food .btn:not(.btn--secondary) {
+      --background: #142c73;
+      --color: var(--auto-text-color-button-light);
+    }
+
+    #image-food .btn:not(.btn--secondary) {
+      --background: #142c73;
+      --color: var(--auto-text-color-button-light);
+    }
+  }
+
+/* new puppy or kitten */
+
+  @media (min-width: 993px) {
+    #new-puppy .btn:not(.btn--secondary) {
+        --background: #142c73;
+        --color: var(--auto-text-color-button-light);
+    }
+
+    #new-kitten .image-banner__heading {
+        --color-base: #ffffff;
+    }
+
+    #new-kitten .btn:not(.btn--secondary) {
+        --background: #ffd701;
+        --color: var(--auto-text-color-button-dark);
+    }
+}
+
+/* about us */
+#about-us-hero{
+    --background-bp: 70%;
+    --color-section-background: #ffd701;
+}
+
+
+/* map */
+
+@media (min-width:993px) {
+  #chm-map-1 .grid-container-map {
+    height: 500px;
+  }
+}
+
+@media (min-width:577px) and (max-width:992px) {
+  #chm-map-1 .grid-container-map {
+    height: auto;
+    min-height: 500px;
+  }
+}
+
+#chm-map-1 .subheading {
+  color: #142c73;
+}
+
+#chm-map-1 .btn {
+  --background: #ffd701;
+  --color: var(--auto-text-color-button-dark);
+}
+
+
+
+#about_us-hero {
+  --background-bp: 70%;
+  --color-section-background: #ffd701;
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  #about_us-hero {
+
+    --background-bp: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  #about_us-hero {
+
+    --background-bp: 85%;
+  }
+}
+
+
+/* shipping */
+#bg-yellow{
+  --color-section-background: #ffd701;
+}
+
+/* vet */
+#bg-blue{
+  color: #142c73;
+}
+
+ #bg-blue .subheading {
+  color: #142c73;
+}
+
+@media (min-width: 993px) {
+  #slideshow-grooming #block-grooming .slideshow__heading {
+    --color-base: #ffffff;
+  }
+
+  #slideshow-grooming #block-grooming .animation-underline:before {
+    background: #ffffff;
+  }
+}
+
+#slideshow-grooming #block-grooming .slideshow__heading {
+  --color-base: #ffffff;
+}
+
+#slideshow-grooming #block-grooming .animation-underline:before {
+  background: #ffffff;
+}
+
+#color-white{
+  color: #ffffff;
+}
+
+#color-white .subheading {
+  color: #ffffff;
+}
+
+/* vet hero */
+@media (min-width: 993px) {
+  #slideshow-vet #block-vet .slideshow__subheading {
+    color: #142c73;
+  }
+
+  #slideshow-vet #block-vet .btn:not(.btn--secondary) {
+    --background: #142c73;
+    --color: var(--auto-text-color-button-light);
+  }
+}
+
+#bg--yellow{
+  --color-background: #ffd701;
+}
+
+#bg--yellow .subheading{
+  color: #142c73;
+}
+
+#icon-banners-1 .btn-medium {
+  --color-accent: #142c73;
+}
+
+
+/* positive-barking-testimony */
+#positive-barking-testimony .btn {
+  --background: ;
+  --color: var(--auto-text-color-button-dark);
+}
+
+
+/* online pet service store  */
+#online-pet-service-store {
+  --background-bp: 70%;
+  --color-section-background: #142c73;
+}
+
+@media (max-width: 992px) {
+  #online-pet-service-store {
+
+    --background-bp: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  #online-pet-service-store {
+
+    --background-bp: 85%;
+  }
+}
+
+#online-pet-service-store .heading {
+  --color-base: #ffffff;
+}
+
+#online-pet-service-store .image-with-text-bg__texts {
+  color: #ffffff;
+}
+
+#online-pet-service-store .btn {
+  --background: #ffd701;
+  --color: var(--auto-text-color-button-dark);
+}
+
+
+
+#mobile_bg{
+  --color-section-background: #deefff;
+}
+
+#grooming-services .slideshow__heading {
+  --color-base: #ffffff;
+}
+
+#grooming-services .slideshow__description {
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  #grooming-services .slideshow__heading {
+    --color-base: #142C73;
+  }
+  
+  #grooming-services .slideshow__description {
+    color: var(--color-base);
+  }
+}
+
+

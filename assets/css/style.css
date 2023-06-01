@@ -1,0 +1,254 @@
+:root {
+    --duration-short: .2s;
+    --duration-medium: .3s;
+    --duration-large: .5s;
+    --animation-bezier: ease;
+    --zoom-animation-bezier: cubic-bezier(.15, .75, .5, 1);
+
+    --animation-type: cubic-bezier(0, 0, 0.3, 1);
+    --animation-time: .5s;
+
+    --product-thumbnail_move-up: 0.35s;
+    --product-thumbnail_move-up_type: linear;
+    --product-thumbnail-button_opacity_hover: 0.15s;
+    --product-thumbnail-button_opacity_over: 0.3s;
+    --product-thumbnail-button_opacity_type: linear;
+    --product-thumbnail-button_move: 0.35s;
+    --product-thumbnail-button_move_type: linear;
+
+    --font-heading-family: 'Avenir Next LT Pro', sans-serif;
+    --font-heading-style: normal;
+    --font-heading-weight: 600;
+
+    --font-body-family: 'Avenir Next LT Pro', sans-serif;
+    --font-body-style: normal;
+    --font-body-weight: 300;
+    --font-body-bold-weight: 600;
+    --font-button-weight: 600;
+
+    --font-heading-scale: 1.0;
+    --font-body-scale: 1.0;
+
+    --font-body-size: calc(16px * var(--font-body-scale));
+    --font-body-line-height: 130%;
+    --font-body2-size: calc(14px * var(--font-body-scale));
+    --font-body2-line-height: 130%;
+    --font-body3-size: calc(12px * var(--font-body-scale));
+    --font-body3-line-height: 130%;
+    --font-body4-size: calc(10px * var(--font-body-scale));
+    --font-body4-line-height: 130%;
+
+    --color-body-background: #ffffff;
+    --color-secondary-background: #F6F7FA;
+    --color-section-background: var(--color-secondary-background);
+    --color-simple-dropdown: #ffffff;
+    --color-vertical-menu-dropdown: #ffffff;
+
+    --color-base: #142c73;
+    --color-base-rgb: 20, 44, 115;
+    --color-accent: #ffd701;
+    --color-subheading: var(--color-accent);
+    --color-text-link: #0077FC;
+
+    --color-price: #142C73;
+    --color-old-price: #d20404;
+    --color-lines-borders: rgba(20, 44, 115, 0.3);
+    --color-input-background: #F6F7FA;
+    --color-input-text: #142C73;
+    --color-input-background-active: var(--color-body-background);
+    --opacity-icons: 0.3;
+
+    --mobile-focus-color: rgba(20, 44, 115, 0.04);
+
+    --shadow: 0px 4px 20px rgba(22, 19, 69, 0.13);
+    --auto-text-color-button-light: #ffffff;
+    --auto-text-color-button-dark: var(--color-base);
+    --auto-input-color-active-border-light: rgba(255, 255, 255, 0.3);
+    --auto-input-color-active-border-dark: rgba(var(--color-base-rgb), 0.3);
+    --auto-text-color-input-light: #ffffff;
+    --auto-text-color-input-dark: var(--color-input-text);
+    --auto-text-color-accent:
+      var(--color-base);
+    --auto-text-color--with-base-color: #ffffff;
+    --radius: 8px;
+    --radius-input: 8px;
+    --radius-button: 8px;
+    --radius-badge: 3px;
+    --radius-checkbox: 4px;
+
+    --color-badge-1: #d20404;
+    --color-badge-1-text: var(--auto-text-color-button-light);
+    --color-badge-2: #ef6c00;
+    --color-badge-2-text: var(--auto-text-color-button-light);
+    --color-badge-3: #142C73;
+    --color-badge-3-text: var(--auto-text-color-button-light);
+    --color-free-delivery-bar: #99D5CF;
+
+    --color-error: #F51000;
+
+    --form_field-height: 50px;
+
+    --page-width: 1300px;
+    --page-padding: 20px;
+
+    --sections-top-spacing: 100px;
+    --sections-top-spacing-mobile: 80px;
+    --sections-top-spacing--medium: 80px;
+    --sections-top-spacing--medium-mobile: 60px;
+    --sections-top-spacing--small: 40px;
+    --sections-top-spacing--small-mobile: 40px;
+
+    --padding1: 10px;
+    --padding2: 20px;
+    --padding3: 30px;
+    --padding4: 40px;
+    --padding5: 60px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-size: var(--font-body-size);
+    line-height: var(--font-body-line-height);
+    color: var(--color-base);
+    background: var(--color-body-background);
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    overflow-x: hidden;
+  }
+
+  .btn {
+    --background: var(--color-accent);
+    --color: var(--auto-text-color-button-dark);
+    --fill: var(--auto-text-color-button-dark);
+  }
+
+  .btn--secondary {
+    --background: var(--color-base);
+    --color: var(--auto-text-color-button-light);
+    --fill: var(--auto-text-color-button-light);
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    word-wrap: normal !important;
+  }
+
+  .visually-hidden:not(:focus),
+  .visually-hidden:not(:focus-visible) {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+  }
+
+  .announcement-bar {
+    opacity: 0;
+  }
+
+  .popup-modal {
+    display: none;
+  }
+    header{
+    opacity: 0;
+    transition: opacity 1s var(--animation-bezier);
+  }
+  .header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;padding: 25px 0;}
+  .header.logo-to-left{
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+  }
+  .header>*{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  @media (min-width: 993px){
+    .header__mobile{
+      display: none;
+    }
+    .header__drawer{
+      display: none;
+    }
+  }
+  @media (max-width: 992px){
+    .header__desktop{
+      display: none;
+    }
+    .header{
+      padding: 13px 0;
+    }
+  }
+  .header__heading{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  [class*="submenu-design__"]{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .list-menu--inline{
+    display: inline-flex;
+    flex-wrap: wrap;
+    --row-gap: 10px;
+    --column-gap: 20px;
+    gap: var(--row-gap) var(--column-gap);
+  }
+  .list-menu--classic .list-menu--inline{
+    --row-gap: 16px;
+    --column-gap: 24px;
+  }
+
+.chm-reviews__image {
+  width: 120px;
+}
+
+.text-center .chm-reviews__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.policy__container {
+  max-width:560px;
+  max-width:65ch;
+  margin:0 auto;
+  padding-left:20px;
+  padding-right:20px
+ }
+ .policy__title {
+  text-align:center
+ }
+ 
+
+
+
+
+  
